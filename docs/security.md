@@ -67,7 +67,7 @@ The only files on LinuxKit that are allowed to be modified pertain to namespaced
 
 As such, access to the LinuxKit base system is limited in scope: in the event of any container escape, the attack surface
 is also limited because the system binaries and configuration is unmodifiable. To that end, the LinuxKit base system does not
-supply a package manger: containers must be built beforehand with the dependencies they require.
+supply a package manager: containers must be built beforehand with the dependencies they require.
 
 Once a secure LinuxKit base system has been built, it cannot be tampered with, even by malicious user containers. Even if user
 containers unintentionally expose themselves to attack vectors, immutability of the LinuxKit base system limits the scope of
